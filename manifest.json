@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "X Like/View Ratio",
+  "description": "Muestra el % de likes sobre visualizaciones en posts de X.",
+  "version": "1.0.0",
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", "https://x.com/*"],
+      "js": ["contentScript.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": []
+}

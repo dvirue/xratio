@@ -1,0 +1,23 @@
+.x-likeview-badge{
+  margin-left:.5rem;
+  padding:2px 6px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:600;
+  display:inline-flex;
+  align-items:center;
+  /* base */
+  background:#1d9bf0;
+  color:#fff;
+}
+
+/* Colores por rango */
+.x-likeview-badge.er-green { background:#16a34a; }  /* tailwind green-600 */
+.x-likeview-badge.er-amber { background:#d97706; }  /* amber-600 */
+.x-likeview-badge.er-red   { background:#dc2626; }  /* red-600 */
+.x-likeview-badge.er-neutral { background:#6b7280; }/* gray-500 */
+
+/* Opcional: borde para mejorar contraste en dark */
+@media (prefers-color-scheme: dark){
+  .x-likeview-badge { box-shadow: 0 0 0 1px rgba(0,0,0,.35); }
+}
